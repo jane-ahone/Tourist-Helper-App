@@ -1,0 +1,14 @@
+@media (max-width: 500px){
+   
+        p {
+            font-size: 5px;
+        }
+        h1 {
+            font-size: 7px;
+        }
+
+        th {
+            font-size: 1px;
+        }
+    
+}

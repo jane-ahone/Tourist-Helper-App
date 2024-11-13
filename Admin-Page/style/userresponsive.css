@@ -1,0 +1,11 @@
+@media(max-width: 500px) {
+    th {
+        font-size: 10px;
+    }
+    
+    .div h1 {
+        font-size: 20px;
+        margin: auto -1px;
+        width: 400px;
+    }
+}

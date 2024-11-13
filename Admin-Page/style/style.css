@@ -1,0 +1,391 @@
+:root {
+    --color-primary: rgba(101, 216, 216, 0.87);
+    --color-danger: red;
+    --color-success: aqua;
+    --color-warning: yellow;
+    --color-white: white;
+    --color-dark: rgba(75, 71, 71, 0.849);
+    --color-black: rgb(19, 18, 18);
+    --color-light: rgba(175, 138, 138, 0.849);
+    --color-background: rgba(202, 240, 240, 0.623);
+
+
+    --card-border-radius: 8px;
+    --border-radius-1: 2px;
+    --border-radius-message: 20px;
+    --border-radius-2: 4px;
+    --border-radius-3: 6px;
+
+    --card-padding: 5px;
+    --padding-1: 3px;
+
+    --box-shadow: 0 6px 6px var(--color-light);
+}
+
+
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+
+
+}
+
+body {
+    /*body*/
+width: 100vw;
+height: 100vh;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+background: white;
+user-select: none;
+overflow-x: hidden;
+
+}
+
+
+
+
+a {
+    color: var(--color-dark);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 20px;
+}
+h2 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+h4 {
+    font-size: 12px;
+}
+
+h5 {
+    font-size: 10px;
+}
+
+small {
+    font-size: 0.76rem;
+}
+
+.profile--photo
+{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.text-muted {
+    color: rgba(187, 15, 15, 0.288);
+
+}
+
+p{
+    color: var(--color-dark);
+}
+
+b {
+    color: var(--color-black);
+}
+
+.primary {
+    color: var(--color-primary);
+}
+.danger {
+    color: var(--color-danger);
+}
+.success {
+    color: var(--color-success);
+}
+.warning {
+    color: var(--color-warning);
+}
+.white {
+    color: var(--color-white);
+}
+
+
+.container {
+    display: grid;
+    width: 100%;
+    /*margin: 0 auto;*/
+    
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto /*23rem*/;
+}
+
+
+aside {
+    height: 100vh;
+    background: white;
+    
+
+}
+aside .logo span {
+    color: aqua;
+}
+
+aside .top {
+    background: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+
+aside h2 {
+    margin: auto;
+}
+
+aside .logo {
+    display: flex;
+    gap: 0.8rem;
+    
+}
+
+aside .logo img {
+    width: 3rem;
+    height: 3rem;
+}
+
+aside .close {
+    display: none;
+    
+}
+
+/*==========This is the Sidebar=======*/
+aside .sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    position: relative;
+    top: 1.5rem;
+}
+
+aside h3 {
+    font-weight: 500;
+}
+
+aside .sidebar a {
+    display: flex;
+    color: var(--color-dark);
+    gap: 1rem;
+    margin-left: 2rem;
+    position: relative;
+    align-items: center;
+    height: 3rem;
+    transition: all 1.5s ease;
+}
+
+aside .sidebar a:last-child {
+    bottom: -5rem;
+    width: 100%;
+    position: absolute;
+}
+
+aside .sidebar a.active {
+    background: var(--color-light);
+    color: var(--color-primary);
+    margin-left: 0;
+}
+
+aside .sidebar a.active::before {
+    content: '';
+    width: 6px;
+    height: 100%;
+    background: var(--color-primary);
+}
+
+aside .sidebar a:hover {
+color: rgb(141, 13, 13);
+}
+aside .sidebar svg {
+    transition: all 1s ease;
+}
+
+aside .sidebar a:hover svg {
+    margin-left: 3rem;
+}
+
+aside .sidebar .message-count {
+    background: var(--color-danger);
+    color: antiquewhite;
+    padding: 2px 10px;
+    border-radius: var(--border-radius-message);
+}
+
+
+/*================ MAIN IS HERE ================*/
+
+
+
+main {
+    margin-top: 1.4rem;
+    background: wheat;
+}
+
+main .date {
+    display: inline-block;
+    background: var(--color-light);
+    border-radius: var(--border-radius-2);
+    margin-top: 1rem;
+    padding: 0.5rem 1.6rem;
+}
+
+main .date input[type='date'] {
+    background: rgba(189, 101, 101, 0.562);
+    
+}
+
+main .insights{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+}
+
+main .insights > div{
+    background: white;
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 1s ease;
+}
+
+main .insights > div:hover {
+    box-shadow: none;
+}
+
+main .insights > div svg {
+    background: coral;
+    border-radius: 50%;
+    padding: 0.5rem;
+    height: 3rem;
+    width: 3rem;
+}
+
+main .insights > div.expenses svg {
+    background: aquamarine;
+}
+
+main .insights > div.income svg {
+    background: rgb(214, 127, 255);
+}
+
+main .insights > div .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .insights h3 {
+    margin: auto ;
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+    
+    
+}
+
+.income .top {
+    display: flex;
+}
+main .insights small {
+    margin-top: 1.6rem;
+    display: block;
+}
+
+
+
+
+/*=========thedown=====*/
+/*====THIS IS FOR THE % CIRCLE
+main .insights .progress {
+    position: relative;
+    border-radius: 50%;
+    width: 92px;
+    height: 92px;
+}
+
+main .insights .progress svg {
+    background: transparent;
+    width: 7rem;
+    height: 7rem;
+}
+
+main .insights .progress svg circle {
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-width: 14;
+    stroke-linecap: round;
+    transform: translate(3px, 3px);
+    background: transparent;
+}
+*/
+
+@media (max-width: 500px){
+
+   
+
+    *{
+        font-size: 10px;
+    }
+   
+    tr {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 17px;
+    }
+    th {
+        font-size: 10px;
+    }
+
+    .div h1 {
+        
+        font-size: 4px;
+      
+    }
+    aside .sidebar {
+        top: 3.5rem;
+    }
+    body {
+        overflow-x: auto;
+    }
+    
+
+    label {
+        font-size: 10px;
+    }
+    input {
+        width: 10px;
+        height: 2px;
+        font-size: 2px;
+    }
+    .form-group {
+        font-size: 2px;
+    }
+
+}
+
+
+

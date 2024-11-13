@@ -1,0 +1,24 @@
+@media(max-width: 500px){
+    #myText{
+        font-size: 25px;
+    }
+    #down {
+        font-size: 17px;
+    }
+    .background {
+        height: 80vh;
+    }
+    .pic {
+        font-size: 15px;
+    }
+    .box2, .box3, .box1, ol, .box {
+        font-size: 15px;
+    }
+    .text-heading {
+        font-size: 15px;
+        font-weight: bolder;
+    }
+    .text-body {
+        font-size: 12px;
+    }
+}

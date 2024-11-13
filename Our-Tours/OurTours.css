@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins, sans-serif;
+}
+
+header{
+    display: flex;
+    padding: 20px 5%;
+    color: #fff;
+    background-color: #190f31;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+.nav-list{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    list-style: none;
+}
+li, a{
+    font-family: poppins, sans-serif; 
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color:white;
+}
+
+.nav-list li a:hover{
+    color: #40b09c
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: 700;
+    color: #40b09c;
+    margin: 100px;
+}
+
+.attractions, .hotels{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 20px 5%;
+}
+.attraction1{
+    display: flex;
+    justify-content: space-between;
+}
+.attraction1 div{
+    width: 50%;
+    height: 300px;
+    overflow:scroll;
+}
+.pic{
+    width: 45%;
+    height: 300px;
+    border-radius: 5px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #40b09c;
+    border-color: #40b09c;
+    color: #ffff;
+    font-size: larger;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;
+}
+
+.hotels{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 20px 5%;
+    background-color: #f7f5f5;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 50%;
+}
+.links h3{
+    font-size: larger;
+    font-weight: 700;
+    font-style: bold;
+}
+
+.links a{
+    color:  rgb(180, 48, 48);
+}
+
+.attraction2{
+    display: flex;
+    justify-content: space-between;
+}
+.attraction2 .pic{
+    width: 50%;
+}
+.footer{
+    background-color: rgb(4, 4, 31);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 5%;
+}
+.footer p{
+    color: #ffff;
+    margin-bottom: 40px;
+}
+.footer button{
+    border-radius: 5px;
+    height: 40px;
+    width: 110px;
+    font-size: small;
+    color: #ffff;
+    background-color: #40b09c;
+}
+.line2{
+    width: 100%;
+    height: 0.25px;
+    background-color: #40b09c;
+    margin-top: 10px;
+}
+
+
+/*VIP_Page_STYLING*/
+.vipdate{
+    padding: 20px 5%;
+}
+#dateInput{
+    display: flex;
+     gap: 100px;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px groove rgb(54, 52, 52);
+    width: 100%;
+    height: 100px;
+    background-color: #f7f5f5;
+    box-shadow:  rgba(0, 0, 0, 0.2) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;;
+}
+.vipribbon{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    margin-top: 50px ;
+    padding: 10px;
+    border: 1px solid grey;
+    background-color: #f7f5f5;
+    color:#40b09c
+}
+.vipribbon1{
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+    padding: 10px;
+    height: auto;
+    border: 1px solid grey;
+    background-color: #f7f5f5;
+    color:#40b09c
+}
+
+.table{
+    width: 100%;
+}
+table{
+    width: 100%;
+}
+thead{
+    margin-bottom: 30px;
+}
+th div{
+    width: 10px;
+    background-color: #fff;
+}
+tr{
+    display: flex;
+    justify-content: space-around;
+}
+td{
+    width: 20%;
+   text-wrap: balance;
+   margin: 10px;
+}
+td img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    max-width: 100px;
+}
+td button{
+    width: 90px;
+}
+td button:hover, td i:hover{
+    background-color: #1c7968;
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+tr:nth-child(odd){
+    background-color: #f7f5f5;
+}
+
+
+/*About-Buea_Styling*/
+
+.about-topic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    margin: 70px ;
+    gap: 20px;
+}
+#buea{
+    font-weight: 700;
+}
+#motto{
+    font-weight: 300;
+}
+.greenline{
+    height: 9px;
+    background-color: #40b09c;
+    width: 300px;
+}
+.about-text{
+    padding: 40px 10%;
+}
+.heading1{
+    font-size: x-large;
+    font-weight: 700 ;
+    color: #40b09c;
+    margin: 30px 0 30px 0;
+}
+.History p{
+    margin-bottom: 20px;
+    font-size: larger;
+}
+
+/*Travel_Page_Styling*/
+.miniheading{
+    font-size: large;
+    font-weight: 700;
+    margin: 60px 0 20px 0;
+}
+
+.History ul{
+    margin-left: 20px;
+}
+.History li{
+    color: #000;
+}
